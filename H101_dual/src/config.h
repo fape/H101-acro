@@ -43,7 +43,7 @@
 // max angle for level mode (in degrees)
 // low and high rates(angle?)
 #define MAX_ANGLE_LO 35.0f
-#define MAX_ANGLE_HI 55.0f
+#define MAX_ANGLE_HI 65.0f
 
 
 // max rate for rate pid in level mode
@@ -131,12 +131,12 @@
 // level / acro mode switch
 // CH_AUX1 = gestures (default - CH_AUX1)
 // same settings as above
-#define LEVELMODE CH_AUX1
+#define LEVELMODE CH_RLL_TRIM
 
 
 // channel for inverted mode
 // same settings as above (default - off)
-#define INVERTEDMODE CH_OFF
+#define INVERTEDMODE CH_FLIP
 
 
 // aux1 channel starts on if this is defined, otherwise off.
@@ -147,7 +147,7 @@
 
 // comment out if not using ( disables trim as channels, will still work with stock tx except that feature )
 // devo/tx module incompatible
-//#define USE_STOCK_TX
+#define USE_STOCK_TX
 
 // automatically remove center bias ( needs throttle off for 1 second )
 //#define STOCK_TX_AUTOCENTER
